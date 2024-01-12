@@ -7,3 +7,7 @@ ensure
 pytest
 
 -e  .
+
+# this file is specifying the dependencies required to run the production 
+# code of the python project, while requirements_dev.text is used to specify the dependencies
+# required for both development and testing.

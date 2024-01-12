@@ -16,6 +16,9 @@ black==22.8.0
 flake ==5.0.4
 pypy==0.971
 
-
+'''
+It make easier to install the dependencies for the development and testing
+it will be separate from the dependencies required for production
+'''
 
 
