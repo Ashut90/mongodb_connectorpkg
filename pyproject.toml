@@ -1,9 +1,5 @@
-'''used for the config the python project as it is the alternative of the setup.cfg file.
-it contain config related to build the system such as, building package name version author License and dependencies
-'''
-
 [build-system]
-requires = ['setuptools >= '42.0', "wheel"]
+requires = ['setuptools>=42.0', "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
