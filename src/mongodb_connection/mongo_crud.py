@@ -35,6 +35,7 @@ class mongodb_operation:
                     raise TypeError("record must be in the list")
             collection = self.create_collection(collection_name)
             collection.insert_many(record)
+            
         elif type(record)== dict:
             collection = self.create_collection(collection_name)
             collection.insert_one(record)
@@ -52,8 +53,3 @@ class mongodb_operation:
         datajson = json.loads(data.to_json(orient = 'record'))
         collection = self.create_collection()
         collection.insert_many(datajson)
-
-
-
-
-
