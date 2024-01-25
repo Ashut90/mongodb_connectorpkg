@@ -8,7 +8,7 @@ list_of_files =[
 
     ".github/workflows/ci.yaml",
     "src/__init__.py",
-   f"src/{package_name}/__init__.py",
+    f"src/{package_name}/__init__.py",
     f"src/{package_name}/mongo_crud.py",
     "tests/__init__.py",
     "tests/unit/__init__.py",
@@ -16,14 +16,14 @@ list_of_files =[
     "tests/integration/__init__.py",
     "tests/integration/int.py",
     "init_setup.sh",
-    "requirements.text",
-    "requirement_dev.text",
-    
+    "requirements.txt",
+    "requirement_dev.txt",
     "setup.py",
     "setup.cfg",
     "pyproject.toml",
     "tox.ini",
-    "experiment/experiment.ipynb"
+    "experiments/experiments.ipynb"
+
 ]
 
 for filepath in list_of_files:
@@ -34,6 +34,7 @@ for filepath in list_of_files:
 
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
-            pass
+            pass # empty file created
+
 
     
