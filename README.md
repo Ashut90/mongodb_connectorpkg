@@ -120,20 +120,4 @@ Maintaining a high standard of code quality is crucial. We ensure this through t
 
 1. **pylint**: Analyzing code for potential errors.
 2. **flake8**: A comprehensive tool combining `pylint`, `pycodestyle`, and `mccabe` for robust syntax checking.
-3. **pycodestyle**: Enforcing Python style conventions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> bc6b859be382005d4ac371f2c82a8bd7c58b0739
+3. **pycodestyle**: Enforcing Python style conventions
