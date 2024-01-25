@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 from typing import List
 
-with open('README.md', 'r', encoding='utf-8') as f:
-    long_description = f.read()     
+with open('README.md', 'r', encoding='utf-8') as fh:
+    long_description = fh.read()     
    
 
 __version__ = "0.0.4"
