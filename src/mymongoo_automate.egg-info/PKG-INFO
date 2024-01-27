@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: mymongoo-automate
-Version: 0.0.4
+Version: 0.0.5
 Summary: A python package for connecting with database.
 Home-page: https://github.com/Ashutosh94/mongodbconnectorpkg
 Author: Ashutosh94
@@ -27,6 +27,59 @@ Requires-Dist: flake8>=5.0.4; extra == "testing"
 Requires-Dist: tox>=3.25.1; extra == "testing"
 Requires-Dist: black>=22.8.0; extra == "testing"
 
+# MongoDB Automation Suite
+
+This project presents a groundbreaking approach to automating MongoDB database operations, integrating seamlessly with CI/CD workflows. It's designed specifically for file-based database management, offering a robust suite for deploying and retrieving databases with MongoDB Atlas.
+
+## Key Features 🌟
+- Automated database operations.
+- Simple CI/CD integration.
+- Direct deployment to MongoDB Atlas.
+
+## Installation 🛠️
+
+Install the `mymongoo-automate` library using pip:
+
+```python
+pip install mymongoo-automate==0.0.4
+```
+
+## Usage Instructions 📘
+## Setting Up
+
+Import the mongo_crud module from the library:
+
+python
+
+from database_automation import mongo_crud
+print("Library Imported Successfully")
+
+
+## Configuration
+Set up your MongoDB Atlas client URL, database, and collection name:
+
+```
+client_url = "<your_mongodb_atlas_client_url>"
+database = "<your_database_name>"
+collection_name = "<your_collection_name>"
+
+```
+## Example Operation 📖
+Store a record:
+
+
+```python
+
+mg = mongo_crud.mongo_operation(client_url, database, collection_name)
+mg.insert_record({"Name": "Ashutosh", "Designation": "AI Engineer", "Salary": "100k"}, collection_name)
+print("Data Stored")
+
+```
+
+
+Get Involved 🤝
+
+Contributions are welcome! Feel free to submit issues or pull requests. For queries, contact us at [ashutosh.formin@gmail.com ].
 
 # requirements_dev.txt: 
 Streamlining Testing and Development
